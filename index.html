@@ -8,9 +8,15 @@
 <body>
   <header>Shopping List</header>
   <div class="input-div">
-    <input type="text" value="type here..">  
+    <input type="text" label="enter list item here" placeholder="type here.." onfocus="this.placeholder = ''" onblur="this.placeholder = 'type here...'"/>  
   </div>
-  <div class="list-center">
+  <main class="container">
+    <div class="dashboard">
+    <ul>
+      <li>num items listed</li>
+      <li>num items crossed</li>
+    </ul>
+  </div><div class="list-box">
     <ul>
       <li>list_item</li>
       <li>list_item</li>
@@ -19,13 +25,12 @@
       <li>list_item</li>
       <li>list_item</li>
       <li>list_item</li>
+      <li>list_item</li>
+      <li>list_item</li>
+      <li><s>list_item</s></li>
     </ul>
   </div>
-  <div class="dashboard">
-    <ul>
-      <li>no. of items listed</li>
-      <li>no. of items crossed off</li>
-    </ul>
-  </div>
+  
+</main>
 </body>
 </html>

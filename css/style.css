@@ -457,72 +457,81 @@ div.input-div > input {
   background-color: #E6E6E5;
 }
 
-div.list-center {
-  margin: auto;
-  margin-top: 3em;
-  text-align: center;
-  height: 30em; 
-  width: 20em;
+.container {
+/*flexbox */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+div.dashboard {
+  margin: 0;
+  margin-top: 0.5em;
   outline: 1px solid red;
-
+  height: 420px;
+  width: 10em;
+  display: inline-block;
 }
-div.list-center > ul > li:last-child {
-  text-decoration: line-through;
+
+div.dashboard > ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  padding: 1em;
 }
 
-div.list-center > ul {
+div.dashboard > ul > li {
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  border-radius: 10px 7px 35px 10px;
+  border: 2px solid gray;
+}
+
+div.list-box {
+  margin: auto;
+  margin-top: 0.5em;
+  text-align: center;
+  height: 420px; 
+  width: 30em;
+  outline: 1px solid red;
+  display: inline-block;
+}
+
+div.list-box > ul {
   text-align: center;
   list-style: none;
   padding: 0;
   margin: auto;
+  -webkit-column-count: 2;
+  -webkit-column-width: 100px;
+  -webkit-column-gap: 1px;
 }
 
-div.list-center > ul > li {
-  margin: auto;   
+div.list-box > ul > li {
+  display: inline-block;
+  margin: 0;  
   text-align: center;
   width: 90%;
   padding: 1em 0;
+  /*border-radius: 75px 0 90px 0;*/
+  border-radius: 85px;
+  border: 0.8px solid gray;
+  background-color: #B2D1F0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
 }
 
-div.list-left {
-  display: none;
-  float: left;
-  height: 70%; 
-  width: 50%;
-}
 
-div.list-left > ul {
-  list-style: none;
-  margin-left: 8em;
-}
 
-div.list-left > ul > li {
-  padding: 1em 1em;
-  text-align: center;
-  border: 1.5px solid gray;
-  border-radius: 500px;
-  width: 25em;
-  margin-top: 1.2em;
-}
 
-div.list-right {
-  display: none;
-  float: right;
-  height: 70%;
-  width: 50%;
-}
-
-div.list-right > ul {
-  margin-right: 8em;
-  list-style: none;
-}
-
-div.list-right > ul > li {
-  text-align: center;
-  padding: 1em 1em;
-  border: 1px solid gray;
-  border-radius: 500px;
-  width: 25em;
-  margin-top: 1.2em;
-}
 
