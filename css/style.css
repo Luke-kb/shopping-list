@@ -436,6 +436,7 @@ header {
   vertical-align: middle;
   /*outline: 1px solid red;*/
 }
+
 div.input-div {
   border-radius: 50px;
   width: 34em;
@@ -457,25 +458,26 @@ div.input-div > input {
   background-color: #E6E6E5;
 }
 
-.container {
-/*flexbox */
+main.container {
+  margin-top: 1em;
+/* flexbox */
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
-  flex-direction: row;
+          flex-direction: row;
   -webkit-justify-content: flex-start;
-  justify-content: flex-start;
+          justify-content: flex-start;
   -webkit-align-items: center;
-  align-items: center;
+          align-items: center;
   -webkit-justify-content: center;
-  justify-content: center;
+          justify-content: center;
 }
 
 div.dashboard {
   margin-right: 1em;
   margin-top: 0.5em;
   outline: 1px solid red;
-  height: 420px;
+  height: 450px;
   width: 10em;
   display: inline-block;
 }
@@ -492,35 +494,45 @@ div.dashboard > ul > li {
   margin-top: 1em;
   margin-bottom: 1em;
   text-align: center;
-  border-radius: 10px 7px 35px 10px;
-  border: 2px solid gray;
+  border-radius: 10px;
+  border: 1px solid gray;
 }
 
 div.list-box {
   margin: 0;
   margin-top: 0.5em;
   text-align: center;
-  height: 420px; 
+  height: 450px; 
   width: 40em;
   outline: 1px solid red;
   display: inline-block;
 }
 
 div.list-box > ul {
+  width: 35em;
+  height: 28em;
+  margin: 0;
+  margin-right: 0;
   text-align: center;
   list-style: none;
   padding: 0;
-  margin: auto;
+  /* columns */
   -webkit-column-count: 2;
-  -webkit-column-width: 100px;
-  -webkit-column-gap: 20px;
+          column-count: 2;
+  -webkit-column-width: 75px;
+          column-width: 75px;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+  -webkit-column-rule: 1px solid #ddd;
+     -moz-column-rule: 1px solid #ddd;
+          column-rule: 1px solid #ddd;
 }
 
 div.list-box > ul > li {
   display: inline-block;
   margin: 0;  
   text-align: center;
-  width: 65%;
+  width: 10em;
   padding: 1em;
   /*border-radius: 75px 0 90px 0;*/
   border-radius: 85px;
@@ -528,7 +540,6 @@ div.list-box > ul > li {
   background-color: #B2D1F0;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-
 }
 
 
