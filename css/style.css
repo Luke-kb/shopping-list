@@ -542,7 +542,22 @@ div.list-box > ul > li {
   margin-bottom: 0.5em;
 }
 
+div.list-box > ul > li:last-child {
+  transform: skewX(15deg);
+  animation: skew 1s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  opacity: .8;
+}
 
-
+@keyframes skew {
+  0% {
+    transform: skewX(7deg);
+  }
+  
+  100% {
+    transform: skewX(-7deg);
+  }
+}
 
 
