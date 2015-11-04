@@ -4,30 +4,20 @@
   <meta charset="UTF-8">
   <title>:: Shopping List ::</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+  </script>
+  <script type="text/javascript" src="./javascript/script.js"></script>
 </head>
 <body>
-  <header>Shopping List</header>
-  <div class="input-div">
-    <input type="text" label="enter list item here" placeholder="type here.." onfocus="this.placeholder = ''" onblur="this.placeholder = 'type here...'"/>  
-  </div>
+  <header><i>to do list</i></header>
+  <form class="input-div">
+    <input type="text" id="list-item" name="list-input" label="enter list item here" placeholder="type here.." onfocus="this.placeholder = ''" onblur="this.placeholder = 'type here...'"/>  
+  </form>
   <main class="container">
-    <div class="dashboard">
-    <ul>
-      <li>num items listed</li>
-      <li>num items crossed</li>
-    </ul>
   </div><div class="list-box">
-    <ul>
-      <li>list_item</li>
-      <li>list_item</li>
-      <li>list_item</li>
-      <li>list_item</li>
-      <li>list_item</li>
-      <li>list_item</li>
-      <li>list_item</li>
-      <li>list_item</li>
-      <li>list_item</li>
-      <li><s>list_item</s></li>
+    <ul id="list">
+      <li>wash the dog</li>
+      <button class="delete">x</button>
     </ul>
   </div>
   
