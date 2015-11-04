@@ -1,6 +1,6 @@
 function addListItem() {
     var inputText = $("#list-item").val();
-    $("#list").append('<li>' + inputText + '</li>' + '<button class="delete">' + 'x' + '</button>');
+    $("#list").append('<li>' + inputText + '<button class="delete">' + 'x' + '</button>' + '</li>');
       //set input form to empty string
     $("#list-item").val(''); 
 }
