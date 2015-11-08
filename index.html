@@ -11,14 +11,14 @@
 <body>
   <header><i>to do list</i></header>
   <form class="input-div">
-    <input type="text" id="list-item" name="list-input" label="enter list item here" placeholder="type here.." onfocus="this.placeholder = ''" onblur="this.placeholder = 'type here...'"/>  
+    <input type="text" id="input-item" name="list-input" label="enter list item here" placeholder="type here.." onfocus="this.placeholder = ''" onblur="this.placeholder = 'type here...'" required/>  
   </form>
   <main class="container">
-  </div><div class="list-box">
-    <ul id="list">
-      <li>wash the dog<button class="delete">x</button></li>
+  <div class="list-box">
+    <ul id="list-view">
+      <li class="new-item">groceries<button class="delete">x</button>
+      </li>
   </div>
-  
 </main>
 </body>
 </html>

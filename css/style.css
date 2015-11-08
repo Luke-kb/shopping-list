@@ -507,13 +507,12 @@ div.list-box > ul {
           column-rule: 1px solid #ddd;
 }
 
-div.list-box > ul > li {
+li.new-item {
   display: inline-block;
   margin: 0;  
   text-align: center;
   width: 10em;
   padding: 1em;
-  /*border-radius: 75px 0 90px 0;*/
   border-radius: 85px;
   border: 0.8px solid gray;
   background-color: #B2D1F0;
@@ -521,28 +520,35 @@ div.list-box > ul > li {
   margin-bottom: 0.5em;
 }
 
-button.delete {
-  border: none;
-  background-color: transparent;
-  font-size: 1.5em;
+li.completed {
+  display: inline-block;
+  margin: 0;  
+  text-align: center;
+  width: 10em;
+  padding: 1em;
+  border-radius: 85px;
+  border: 0.8px solid gray;
+  background-color: gray;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-decoration: line-through;
 }
 
-/*div.list-box > ul > li:last-child {
-  transform: skewX(15deg);
-  animation: skew 1s infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-out;
-  opacity: .8;
-}*/
+button.delete {
+  color: #fafafa;
+  margin-left: 0.5em;
+  background-color: #87b8e8;
+  border-width: 1px;
+  border-color: none;
+  text-shadow: none;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 50%;
+  display: inline-block;
+  border: none;
+  padding: 0 none;
+  display: none;
+}
 
-/*@keyframes skew {
-  0% {
-    transform: skewX(7deg);
-  }
-  
-  100% {
-    transform: skewX(-7deg);
-  }
-}*/
 
 
